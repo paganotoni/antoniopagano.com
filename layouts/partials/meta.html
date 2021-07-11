@@ -1,0 +1,85 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> 
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
+{{ $description := "description" }}
+
+<meta name="description" content="{{ $.Param $description }}" />
+<meta itemprop="description" content="{{ $.Param $description }}" />
+<meta property="og:description" content="{{ $.Param $description }}" />
+<meta name="twitter:description" content="{{ $.Param $description }}" />
+
+<meta name="url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="{{ .Language.Lang }}">
+<meta name="language" content="{{ .Language.LanguageName }}">
+
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{ end }}
+
+<!-- SocialImage -->
+{{ with .Params.ogimage }} 
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" /> 
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" /> 
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.og_image | absURL }}" /> 
+{{ end }}
+
+{{ $timeformat := "2006-01-02T15:04:05Z0700" }}
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:updated_time" content="{{ .Lastmod.Format $timeformat | safeHTML }}" />
+<meta name="twitter:site" content="{{ .Site.Params.twitter }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitter }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ .Permalink }}" /> 
+
+<!-- Other -->
+<meta name="robots" content="index,follow" /> 
+<meta name="googlebot" content="index,follow" />
+<meta name="keywords" />
+<meta name="imagemode" content="force" />
+<meta name="coverage" content="Worldwide" /> 
+<meta name="distribution" content="Global" />
+<meta name="HandheldFriendly" content="True" /> 
+
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Params.sitename }}" /> 
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-touch-fullscreen" content="yes" /> 
+
+<meta property="og:type" content="website" /> 
+<meta name="author" content="{{ .Site.Params.author }}" />
+<script defer type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebSite", 
+    "url": "{{ .Permalink }}", 
+    "sameAs": [
+        "{{ .Site.Params.facebook }}", 
+        "{{ .Site.Params.github }}",
+        "{{ .Site.Params.twitter }}",
+        "{{ .Site.Params.linkedin }}"
+    ], 
+    "name": "{{ .Title }}"
+}
+</script>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Antonio Pagano</title>
-
+        <title>{{ .Title }} | {{ .Site.Title }}</title>
+        {{ partial "meta" . }}
+        {{ partial "favicon" . }}
+        
         {{$tailwind := resources.Get "css/tailwind.css" | resources.PostCSS}}
         {{if (eq (getenv "NODE_ENV") "production")}}
             {{$tailwind = $tailwind | minify | fingerprint | resources.PostProcess}}
