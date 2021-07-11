@@ -1,0 +1,7 @@
+baseURL = "http://antoniopagano.com/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+paginate = 6
+
+title = "Antonio Pagano"
+
