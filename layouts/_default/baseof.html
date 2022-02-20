@@ -5,11 +5,13 @@
         {{ partial "meta" . }}
         {{ partial "favicon" . }}
         
-        {{$tailwind := resources.Get "css/tailwind.css" | resources.PostCSS}}
-        {{if (eq (getenv "NODE_ENV") "production")}}
-            {{$tailwind = $tailwind | minify | fingerprint | resources.PostProcess}}
-        {{end}}
-        <link rel="stylesheet" type="text/css" href="{{$tailwind.Permalink}}">
+        {{$styles := resources.Get "css/styles.css"}}
+        {{ if .Site.IsServer }}
+            <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+        {{ else }}
+        {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+            <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
+        {{ end }}
     
     </head>
     <body class="h-screen">
