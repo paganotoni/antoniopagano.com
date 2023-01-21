@@ -11,16 +11,16 @@
     </header>
     <section class="flex flex-col items-center md:flex-row gap-10 mb-10">
         <div class="flex flex-col text-center md:text-left">
-            <h1 class="text-5xl mb-3 font-bold">Hello, I'm Antonio 👋</h1>
-            <div class="text-2xl md:border-l-2 md:border-gray-300 md:pl-7">
+            <h1 class="text-4xl md:text-5xl mb-3 font-bold">👋 Hello I'm Antonio </h1>
+            <div class="text-2xl md:border-gray-300">
                 {{ .Content }}
             </div>
         </div>
-        <img src="/images/image.JPG" alt="profile-picture" class="-mb-[140px] -mt-[100px] -z-50 w-full border-none md:z-none md:mb-0 md:mt-0 md:border-2 rounded-full b-2 md:w-[300px] md:h-[300px] border-8 border-gray-600">
+        <img src="/images/image.jpg" alt="profile-picture" class="-mb-[140px] -mt-[80px] -z-50 w-full border-none md:z-none md:mb-0 md:mt-0 md:border-2 rounded-full b-2 md:w-[300px] md:h-[300px] border-8 border-gray-600">
     </section>
     
    
-    <div class="p-7 px-10 bg-blue-50 rounded-3xl mb-10">
+    <div class="p-5 px-7 bg-blue-50/90 rounded-2xl md:p-7 md:px-10  md:rounded-3xl mb-10">
         <h2 class="uppercase tracking-wider">Work</h2>
         <div class="text-xl md:text-2xl mb-5">
             {{ range where .Site.Pages "Params.Title" "Work" }}
@@ -29,7 +29,7 @@
         </div>
     </div>
     
-    <div class="p-7 px-10 bg-gray-50 rounded-3xl mb-10">
+    <div class="p-5 px-7 bg-gray-50 rounded-2xl mb-10 rounded-2xl md:p-7 md:px-10  md:rounded-3xl mb-10">
         <h2 class="uppercase tracking-wider mb-4">Entrepreneur</h2>
         <div>
             {{ range where .Site.Pages "Params.Section" "entrepreneur" }}
