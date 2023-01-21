@@ -9,9 +9,11 @@
         {{ if .Site.IsServer }}
             <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
         {{ else }}
-        {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+            {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
             <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
         {{ end }}
+
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     
     </head>
     <body class="h-screen">
