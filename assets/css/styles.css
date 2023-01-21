@@ -691,6 +691,10 @@ select {
   border-width: 0;
 }
 
+.-z-50 {
+  z-index: -50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -718,6 +722,22 @@ select {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.-mb-\[200px\] {
+  margin-bottom: -200px;
+}
+
+.-mb-\[100px\] {
+  margin-bottom: -100px;
+}
+
+.-mb-\[140px\] {
+  margin-bottom: -140px;
+}
+
+.-mt-\[100px\] {
+  margin-top: -100px;
 }
 
 .block {
@@ -754,6 +774,10 @@ select {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-5xl {
@@ -818,6 +842,10 @@ select {
   border-top-width: 2px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-gray-600 {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
@@ -838,12 +866,24 @@ select {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
+.p-\[200px\] {
+  padding: 200px;
 }
 
 .p-7 {
   padding: 1.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-1\.5 {
@@ -902,6 +942,21 @@ select {
   line-height: 1;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -944,6 +999,18 @@ select {
 
 .no-underline {
   text-decoration-line: none;
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 a {
@@ -995,8 +1062,20 @@ h2 {
     margin-top: 0px;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
   }
 
   .md\:flex-row {
@@ -1009,6 +1088,10 @@ h2 {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:border-2 {
+    border-width: 2px;
   }
 
   .md\:border-l-2 {
@@ -1026,5 +1109,15 @@ h2 {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
