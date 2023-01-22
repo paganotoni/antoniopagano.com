@@ -21,7 +21,7 @@
     
    
     <div class="p-5 px-7 bg-blue-50/90 rounded-2xl md:p-7 md:px-10  md:rounded-3xl mb-10">
-        <h2 class="uppercase tracking-wider">Work</h2>
+        <h2 class="uppercase text-gray-600 tracking-wider">Work</h2>
         <div class="text-xl md:text-2xl mb-5">
             {{ range where .Site.Pages "Params.Title" "Work" }}
                 {{ .Content }}
@@ -30,7 +30,7 @@
     </div>
     
     <div class="p-5 px-7 bg-gray-50 rounded-2xl mb-10 rounded-2xl md:p-7 md:px-10  md:rounded-3xl mb-10">
-        <h2 class="uppercase tracking-wider mb-4">Entrepreneur</h2>
+        <h2 class="uppercase text-gray-600 tracking-wider mb-4">Entrepreneur</h2>
         <div>
             {{ range where .Site.Pages "Params.Section" "entrepreneur" }}
                 <div class="mb-5">
@@ -67,7 +67,7 @@
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-md leading-5 text-gray-400 text-center md:text-left md:order-1 md:mt-0">&copy; {{ dateFormat "2006" now }}, Inc. All rights reserved.</p>
+      <p class="mt-8 text-md leading-5 text-gray-700 text-center md:text-left md:order-1 md:mt-0">&copy; {{ dateFormat "2006" now }}, Antonio Pagano. All rights reserved.</p>
     </div>
     
 
