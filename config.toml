@@ -2,6 +2,6 @@ baseURL = "http://antoniopagano.com/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 paginate = 6
-
+enableRobotsTXT = true
 title = "Antonio Pagano"
 
