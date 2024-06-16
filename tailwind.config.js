@@ -1,7 +1,7 @@
 module.exports = {
     content: [
-      'layouts/**/*.html',  
-      'layouts/*.html', 
+      './layouts/**/*.html',
+      './layouts/*.html',
       './content/**/*.md',
     ],
     plugins: [

@@ -2,6 +2,7 @@
 title: Symbol Security
 website: "https://symbolsecurity.com"
 draft": false
+weight: 1
 section: "entrepreneur"
 ---
 

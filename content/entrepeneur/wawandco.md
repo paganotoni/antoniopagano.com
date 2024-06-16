@@ -1,8 +1,8 @@
 ---
 title: Wawandco
 website: "https://wawand.co"
-draft": false
+draft: false
+weight: 1
 section: "entrepreneur"
 ---
-
-I’m the founder of Wawandco, a web development company based in Barranquilla, Colombia that mostly serves the US and European markets. Wawandco is a software partner for growing businesses. At Wawandco we focus on providing software development teams that are highly efficient and deeply focused on delivering value to our customers. To learn more about Wawandco you can get to know more [by visiting our website](https://wawand.co).
+Since founding Wawandco in 2013, I've been dedicated to building efficient software development teams that deliver value to our customers while maintaining cost effectiveness. Based in Barranquilla, Colombia and serving global clients mainly in the US and Europe, we specialize in web applications, mobile solutions, APIs, and UX/UI design work for growing businesses. Learn more at [our website](https://wawand.co).

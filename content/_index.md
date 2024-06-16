@@ -4,8 +4,4 @@ description: "A bit about Antonio"
 headerName: "Antonio Pagano"
 subtitle: "Husband and Father, Founder, Software engineering leader."
 ---
-
-A proud husband and father of 2, a software engineering leader, founder 
-of [Wawandco](https://wawand.co/) and Co-founder of [SymbolSecurity](https://symbolsecurity.com/). 
-I’m also passionate about sports. I used to play volleyball, beach volleyball and baseball. I still 
-follow some of my local teams, and try to keep myself connected with the world of sports.
+As a proud family man and software engineering leader, I find joy in balancing my professional endeavors with my personal life. As the founder of [Wawandco](https://wawand.co/) and Co-founder of [SymbolSecurity](https://symbolsecurity.com/), I'm dedicated to building successful companies. When I'm not focused on innovation and growth, you can find me cheering on my favorite sports teams or staying active through outdoor activities.
