@@ -3,6 +3,6 @@ title: "Work"
 draft: false
 ---
 
-As a seasoned software engineering leader, I've spent years honing my skills and evolving from a junior contributor to a trusted leader of large, multidisciplinary teams. With diverse experience across companies of all sizes, I've developed expertise in leveraging the right tools and technologies for each project.
+My primary role is to build companies from concept to reality. I am deeply involved in the entire process, from architecting robust, enterprise-level systems to guiding the engineering teams that bring them to life. My leadership style is direct and deeply technical, grounded in the belief that the best solutions come from leaders who understand the technology intimately. This hands-on approach was the blueprint I used to build Wawandco and remains central to how I operate.
 
-My guiding principle is delivering value quickly while building a strong foundation for long-term success. As someone who thrives on designing and developing innovative software solutions, my ultimate goal is to equip my colleagues, clients, and collaborators with the skills and knowledge they need to succeed – by providing expert mentorship and guidance when needed most.
+My specific focus is on identifying challenges where technology and human behavior intersect. I specialize in developing innovative products that solve these nuanced puzzles, a philosophy that led me to co-found Symbol Security to address the human element in cybersecurity. By moving beyond traditional approaches, I aim to build solutions that are not just technically sound, but fundamentally human-centric. Ultimately, my goal is to empower people with technology, turning complex problems into elegant and effective outcomes.
