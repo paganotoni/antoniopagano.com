@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <header class="flex flex-row justify-between mb-12 items-center pb-7 border-b-2" >
+    <header class="flex flex-row justify-between mb-12 items-center pb-7 border-b-2 border-gray-300" >
         <a href="/" class="no-underline text-2xl font-medium text-gray-700 flex flex-row gap-2 items-center">
             {{ $logo := resources.Get "images/shot.png" }}
             {{ $logo := $logo.Process "webp resize 100x" }}
@@ -9,8 +9,8 @@
             Antonio Pagano
         </a>
 
-        <a href="mailto:a@antoniopagano.com" class="bg-blue-700 hover:bg-blue-800 inline-block p-4 py-1.5 rounded text-white no-underline text-lg">
-          Contact
+        <a href="mailto:a@antoniopagano.com" class="bg-blue-600 hover:bg-blue-800 inline-block p-4 py-1.5 rounded text-white no-underline text-lg">
+          Get in Touch
         </a>
     </header>
     <section class="flex flex-col items-center md:flex-row gap-10 mb-10">
@@ -22,10 +22,8 @@
         </div>
 
         {{ $image := resources.Get "images/shot.png" }}
-        {{ $image := $image.Process "webp resize 600x" }}
-        <img src="{{ $image.RelPermalink }}" alt="profile-picture" class="-mb-[140px] -mt-[80px] -z-50 w-full border-none md:z-none md:mb-0 md:mt-0 md:border-2 rounded-full b-2 md:w-[350px] md:h-[350px] border-8 border-gray-600" width="100" height="100">
-
-
+        {{ $image := $image.Process "webp resize 450x" }}
+        <img src="{{ $image.RelPermalink }}" alt="profile-picture" class="-mb-[140px] -mt-[80px] -z-50 w-full border-none md:z-none md:mb-0 md:mt-0 md:border-2 rounded-full b-2 md:w-[250px] md:h-[250px] border-8 border-gray-600">
     </section>
 
     <h2 class="uppercase text-gray-600 tracking-wider px-4 mb-3 bg-white">What I Do</h2>

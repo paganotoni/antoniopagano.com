@@ -5,16 +5,18 @@
         {{ partial "meta" . }}
         {{ partial "favicon" . }}
 
-        {{$styles := resources.Get "css/styles.css"}}
-        {{ if .Site.IsServer }}
-            <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
-        {{ else }}
-            {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-            <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
+        {{ with resources.Get "css/style.css" }}
+          {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+          {{ with . | css.TailwindCSS $opts }}
+            {{ if hugo.IsDevelopment }}
+              <link rel="stylesheet" href="{{ .RelPermalink }}">
+            {{ else }}
+              {{ with . | fingerprint }}
+                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+              {{ end }}
+            {{ end }}
+          {{ end }}
         {{ end }}
-
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
     </head>
     <body class="h-screen">
         <div class="max-w-[1200px] mx-auto px-8 py-12">
