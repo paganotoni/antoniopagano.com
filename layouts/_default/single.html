@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container">
+  <article class="prose mx-auto">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Date.Format "2006-01-02" }}</p>
+    {{ if .Params.tags }}
+    <p>Tags: {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</p>
+    {{ end }}
+    <div>{{ .Content }}</div>
+  </article>
+</div>
+{{ end }}

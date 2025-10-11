@@ -1,0 +1,17 @@
+<header class="max-w-[1200px] mx-auto px-8 py-12 flex flex-row justify-between mb-12 items-center pb-7 border-b-2 border-gray-300" >
+    <a href="/" class="no-underline text-2xl font-medium text-gray-700 flex flex-row gap-2 items-center">
+        {{ $logo := resources.Get "images/shot.png" }}
+        {{ $logo := $logo.Process "webp resize 100x" }}
+        <img src="{{ $logo.RelPermalink }}" class="rounded-full w-[50px]" alt="logo" width="50" height="50">
+
+
+        Antonio Pagano
+    </a>
+    <ul class="list-none">
+        <li><a href="/blog/" class="text-base">Blog</a></li>
+    </ul>
+
+    <a href="mailto:antonio@pagano.id" class="bg-blue-600 hover:bg-blue-800 inline-block p-4 py-1.5 rounded text-white no-underline text-lg">
+        Get in Touch
+    </a>
+</header>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  {{ range .Pages }}
+  <article>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Date.Format "2006-01-02" }} - {{ .Summary }}</p>
+    {{ if .Params.tags }}
+    <p>Tags: {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</p>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}

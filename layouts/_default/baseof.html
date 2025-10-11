@@ -19,6 +19,7 @@
         {{ end }}
     </head>
     <body class="h-screen">
+        {{ partial "header" . }}
         <div class="max-w-[1200px] mx-auto px-8 py-12">
             {{- block "main" . }}{{- end }}
 
