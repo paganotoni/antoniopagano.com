@@ -1,12 +1,10 @@
 {{ define "main" }}
 <div class="container">
-  <article class="prose mx-auto">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Date.Format "2006-01-02" }}</p>
-    {{ if .Params.tags }}
-    <p>Tags: {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</p>
-    {{ end }}
-    <div>{{ .Content }}</div>
+  <article class="prose mx-auto prose-h1:text-5xl prose-h1:mb-8 prose-headings:my-2 prose-p:mb-1">
+    <h1 class="text-5xl">{{ .Title }}</h1>
+    {{ partial "post-details.html" . }}
+    <main>{{ .Content }}</main>
+
   </article>
 </div>
 {{ end }}
