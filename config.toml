@@ -1,4 +1,4 @@
-baseURL = "http://antoniopagano.com/"
+baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 pagination.pagerSize = 6
