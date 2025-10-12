@@ -1,0 +1,46 @@
+<div class="quiz" id="quiz">
+    {{ $quizData := .Page.Params.quiz }}
+    {{ range $quizData }}
+        <div class="snippet">
+            <p>{{ .question }}</p>
+            <div>{{ transform.Highlight .snippet "javascript" "style=dracula" }}</div>
+        </div>
+
+        <div data-show="false" class="mb-4">
+            <button class="text-center p-3 px-5 bg-gray-50 hover:bg-white rounded shadow-md border" id="button-{{.id}}">Show Answer</button>
+            <div class="mt-4 answer hidden">{{ transform.Highlight .answer "javascript" "style=dracula" }}</div>
+        </div>
+    {{ end }}
+</div>
+
+
+
+<script>
+    const quiz = document.getElementById('quiz')
+    quiz.addEventListener('click', showContent)
+
+    function showContent(e) {
+      if (e.target.tagName === 'BUTTON') {
+          const {parentElement: parent} = e.target
+          const {show} = parent.dataset
+          const answerElement = parent.querySelector('.answer')
+
+
+         if (show === 'false') {
+            answerElement.classList.remove('hidden')
+            answerElement.classList.add('block')
+
+           parent.dataset.show = 'true'
+           e.target.innerHTML = 'Hide Answer'
+           return
+         }
+
+          answerElement.classList.remove('block')
+          answerElement.classList.add('hidden')
+
+          parent.dataset.show = 'false'
+          e.target.innerHTML = 'Show Answer'
+        }
+      }
+</script>
+

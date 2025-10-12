@@ -1,0 +1,8 @@
+{{ $video_mp4 := (.Get "mp4Path") }}
+{{ $video_webm := (.Get "webmPath") }}
+{{ $poster := (.Get "posterPath") }}
+
+<video class="w-full mb-3" poster="{{ $poster }}" preload="metadata" loop="false" controls="true" muted="true">
+    <source src="{{ $video_webm }}" type="video/webm">
+    <source src="{{ $video_mp4 }}" type="video/mp4">
+</video>

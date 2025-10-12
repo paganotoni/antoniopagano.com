@@ -5,6 +5,8 @@ pagination.pagerSize = 6
 enableRobotsTXT = true
 title = "Antonio Pagano"
 
+ignoreLogs = ['warning-goldmark-raw-html']
+
 [[menu.main]]
   name = "Blog"
   url = "/blog/"
