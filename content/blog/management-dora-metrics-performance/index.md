@@ -9,7 +9,6 @@ summary: In today's fast-paced software development world, measuring team perfor
 
 author: "@Wawandco"
 tags: ["software-development", "devops", "performance", "agile"]
-blogimage: "/images/meta/posts/DORA-blog.png"
 ---
 
 In today's fast-paced software development world, measuring the performance and progress of a team is crucial. Knowing how well a team performs can open the door to improvements to the current development process. Improvements that will take them from being a low-performing team to a high-performing one. Metrics are just a way for teams to track their progress and ensure they deliver customer value.
@@ -75,7 +74,7 @@ At our company, we use DORA Metrics to measure the performance of our DevOps pra
 - We incorporate DORA Metrics into our daily standups and sprint planning meetings.
 - Team retrospectives usually include discussion of DORA Metrics and how the team performed.
 
-This can be a bit overwhelming at first, but it's important to remember that DORA Metrics are just a tool to help teams measure their performance and identify areas for improvement. They are not a replacement for the team's experience and expertise. 
+This can be a bit overwhelming at first, but it's important to remember that DORA Metrics are just a tool to help teams measure their performance and identify areas for improvement. They are not a replacement for the team's experience and expertise.
 
 One key area where we've seen it has been particularly useful is when validating process changes. For example, if a team wants to change their deployment process, they can use DORA Metrics to measure the impact of the change on their deployment frequency and lead time for changes. This helps them understand the impact of the change and make data-driven decisions to improve their DevOps practices.
 
@@ -93,4 +92,3 @@ In conclusion, DORA Metrics and Story Points have unique strengths and weaknesse
 - [The DORA DevOps Metrics – Everything You Need to Know](https://www.propelo.ai/blog/2022/dora-devops-metrics)
 - [What are DORA Metrics and Why Do They Matter?](https://codeclimate.com/blog/dora-metrics/)
 - [Use Four Keys metrics like change failure rate to measure your DevOps performance](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)
-

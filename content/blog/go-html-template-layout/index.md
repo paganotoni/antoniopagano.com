@@ -18,7 +18,6 @@ keywords:
   - templates
   - golang
 
-image: "/images/meta/site-og.png"
 description: "Master Go template layouts using block and define expressions. Learn how to create efficient, DRY web page templates and eliminate layout repetition in your Go web applications"
 
 summary: This post explains how to use Go's template block and define expressions for creating reusable page layouts. It demonstrates avoiding repetition in HTML templates for a blog application. Learn to separate layout from content for better maintainability.
