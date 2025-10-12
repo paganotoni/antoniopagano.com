@@ -4,14 +4,14 @@
         {{ $logo := $logo.Process "webp resize 100x" }}
         <img src="{{ $logo.RelPermalink }}" class="rounded-full w-[50px]" alt="logo" width="50" height="50">
 
-        Antonio Pagano
+        <span class="text-base md:text-lg">Antonio <span class="hidden md:inline">Pagano</span></span>
     </a>
-    <ul class="list-none flex flex-row gap-8 font-medium flex-grow mx-0 px-8">
+    <ul class="hidden md:flex list-none flex-row gap-8 font-medium flex-grow mx-0 px-8">
         <li><a href="/" class="text-lg">About</a></li>
         <li><a href="/thoughts/" class="text-lg">Thoughts</a></li>
     </ul>
 
     <a href="mailto:antonio@pagano.id" class="bg-blue-600 hover:bg-blue-800 inline-block p-4 py-1.5 rounded text-white no-underline text-lg">
-        Get in Touch
+        Contact
     </a>
 </header>
