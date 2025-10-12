@@ -9,3 +9,8 @@ This is a Hugo website that uses Tailwindcss to style the html. The deployment w
 ### Development
 
 To develop locally you need to have Hugo installed and NPM installed. You can follow the instructions in the [Hugo documentation](https://gohugo.io/getting-started/installing/).
+
+Run the app locally with:
+```sh
+hugo server -D
+```
