@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="container prose mx-auto prose-headings:my-2 prose-p:mb-1 prose-h2:font-medium">
+    <h1 class="text-center mx-auto text-6xl font-bold text-gray-700"> Thoughts</h1>
+    <p class="text-center !mb-12 text-lg text-gray-600"> Sharing my journey, insights, and experiences in tech and life. </p>
+    {{ range .Pages }}
+        <article class="mb-8">
+            <h2><a class="no-underline hover:underline" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p> {{ .Summary }}</p>
+            {{ partial "post-details.html" . }}
+        </article>
+    {{ end }}
+</div>
+{{ end }}

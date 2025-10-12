@@ -1,6 +1,36 @@
-baseURL = "http://antoniopagano.com/"
+baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 pagination.pagerSize = 6
 enableRobotsTXT = true
 title = "Antonio Pagano"
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 10
+
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', 'NODE_ENV']
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'

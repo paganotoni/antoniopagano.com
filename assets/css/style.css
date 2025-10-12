@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@plugin "@tailwindcss/typography";
+
 @import "tailwindcss";
 
 @theme {
@@ -24,4 +26,16 @@ p {
 
 h2 {
     @apply text-lg font-light text-gray-500;
+}
+
+.copy-btn {
+    @apply absolute top-1 right-1 bg-[#5f696d] p-1 rounded border border-[#a0a0a0] hover:border-[#c4c4c4];
+}
+
+.copy-icon {
+    @apply text-[#c8c8c8];
+}
+
+.copy-btn:hover .copy-icon {
+    @apply text-[#c4c4c4];
 }

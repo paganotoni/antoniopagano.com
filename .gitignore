@@ -4,3 +4,4 @@ bin/*
 /resources/_gen/
 .DS_Store
 .hugo_build.lock
+hugo_stats.json

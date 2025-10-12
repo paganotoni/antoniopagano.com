@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+  <article class="prose mx-auto prose-tr:border prose-tr:border-gray-200 prose-td:p-2 prose-th:p-2 prose-h1:text-3xl prose-ul:text-base prose-h1:mb-8 prose-headings:my-2 prose-p:mb-1">
+    <h1 class="text-5xl">{{ .Title }}</h1>
+    {{ partial "post-details.html" . }}
+    <aside class="bg-gray-100 p-4 rounded mb-8 border-l-4 border-blue-600 mt-2">
+        TLDR; {{ .Summary }}
+    </aside>
+
+    <main>{{ .Content }}</main>
+
+  </article>
+</div>
+{{ end }}
