@@ -7,7 +7,7 @@ tags: ["Cybersecurity", "Web Development", "CSRF", "Security", "DevOps", "securi
 
 draft: false
 type: post
-author: "@Wawandco"
+author: "@paganotoni"
 ---
 
 Imagine one of your loyal users changes their account email address and password without ever logging in or visiting your website. Impossible, right? Not exactly. This isn't a scene from a cyberpunk novel; it's the result of a subtle, powerful, and often misunderstood web vulnerability: **Cross-Site Request Forgery (CSRF)**.

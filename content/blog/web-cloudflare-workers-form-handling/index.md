@@ -7,7 +7,7 @@ description: "Ditch expensive form services. Learn the art of building a zero-co
 
 summary: "This post breaks down how we solved the $200/month contact form problem for a static Hugo site. We detail our journey in crafting an elegant, zero-cost solution by using Cloudflare Workers as a serverless 'brain' and HTMX for an instantaneous user experience."
 
-author: "@Wawandco"
+author: "@paganotoni"
 tags: ["Hugo", "Cloudflare Workers", "HTMX", "Forms", "Serverless", "deployment", "frontend"]
 ---
 

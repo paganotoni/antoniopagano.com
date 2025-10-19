@@ -8,7 +8,7 @@ description: "Learn how HTTP caching headers can boost your website's performanc
 
 summary: "Website speed directly impacts revenue - just 100ms can cause a 7% drop in conversions. This guide explains how HTTP caching headers like Cache-Control and Content-Encoding can dramatically improve performance, reduce infrastructure costs, and boost SEO rankings. Learn to turn complex caching concepts into simple, powerful business advantages."
 
-author: "@Wawandco"
+author: "@paganotoni"
 tags: ["caching", "performance", "http", "seo", "devops", "web-development"]
 ---
 
