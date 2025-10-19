@@ -1,7 +1,7 @@
 ---
 date: 2015-10-09
 title: "Golang on CircleCI"
-author: "@Wawandco"
+author: "@paganotoni"
 draft: false
 type: post
 

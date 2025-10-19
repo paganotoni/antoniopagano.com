@@ -8,7 +8,7 @@ summary: "Learn why treating UI design as a commodity holds your business back. 
 
 draft: false
 type: post
-author: "@Wawandco"
+author: "@paganotoni"
 tags: ["UI Design", "UX", "Design Strategy", "Business", "ROI", "Collaboration", "frontend", "business"]
 ---
 

@@ -7,7 +7,7 @@ description: Knowing how well a team performs can open the door to improvements 
 
 summary: In today's fast-paced software development world, measuring team performance is crucial for improvement. DORA metrics help transform low-performing teams into high-performing ones. They track progress and ensure customer value delivery.
 
-author: "@Wawandco"
+author: "@paganotoni"
 tags: ["software-development", "devops", "performance", "agile"]
 ---
 

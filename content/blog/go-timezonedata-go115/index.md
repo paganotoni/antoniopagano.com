@@ -1,7 +1,7 @@
 ---
 date: 2021-12-10
 title: "Timezone Data in Go 1.15+"
-author: "@Wawandco"
+author: "@paganotoni"
 draft: false
 type: post
 

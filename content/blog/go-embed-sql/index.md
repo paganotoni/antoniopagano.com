@@ -1,7 +1,7 @@
 ---
 date: 2022-01-16
 title: "Go embed for better SQL query management"
-author: "@Wawandco"
+author: "@paganotoni"
 draft: false
 type: post
 

@@ -4,7 +4,7 @@ title: "Using Go's build tags"
 draft: false
 type: post
 
-author: "@Wawandco"
+author: "@paganotoni"
 tags: ["software-development", "go"]
 description: "Master Go's build tags to optimize your Go applications. Learn how to use build constraints effectively for platform-specific code, testing, and development configurations."
 

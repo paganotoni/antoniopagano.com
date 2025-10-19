@@ -6,7 +6,7 @@ summary: "Miscommunication between executives and engineering teams is a leading
 tags: ["Leadership", "Communication", "Software Development", "Founder Tips", "Team Culture", "Management", "business", "teams"]
 draft: false
 type: post
-author: "@Wawandco"
+author: "@paganotoni"
 ---
 
 You have a game-changing vision for a new feature. You walk over to your lead developer and say, "We need to add a social sharing option. It's a simple button, should be quick, right?" The developer gives you a long, silent stare before saying, "I'll have to look into it." Weeks later, you're behind schedule, over budget, and the "simple button" has unearthed a dozen other complexities.

@@ -3,7 +3,7 @@ title: "Page layouts in Go"
 date: 2022-03-12
 draft: false
 type: "post"
-author: "@Wawandco"
+author: "@paganotoni"
 
 tags:
   - software-development

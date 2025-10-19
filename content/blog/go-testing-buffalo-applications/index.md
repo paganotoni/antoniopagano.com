@@ -6,7 +6,7 @@ type: post
 layout: posts
 type: post
 
-author: "@Wawandco"
+author: "@paganotoni"
 tags: [software-development, buffalo, go, testing]
 description: "Comprehensive guide to testing Go Buffalo applications. Learn best practices, testing strategies, and how to write effective tests for your Buffalo web apps using Go's testing tools and Buffalo's testing utilities."
 

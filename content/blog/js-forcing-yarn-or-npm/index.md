@@ -3,7 +3,7 @@ title: "TIP: Ensuring your team uses YARN/NPM"
 date: 2020-01-16T09:19:57-05:00
 draft: false
 type: "post"
-author: "@Wawandco"
+author: "@paganotoni"
 
 tags: [software-development, javascript, frontend]
 description: "Quick tip: Learn how to maintain package manager consistency in your team by enforcing YARN or NPM usage. Simple steps to prevent dependency conflicts and ensure smooth development workflow."

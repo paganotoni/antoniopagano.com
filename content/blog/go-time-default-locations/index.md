@@ -2,7 +2,7 @@
 title: "Go's Locations & Alpine Docker image"
 date: 2020-03-29T13:30:25-05:00
 
-author: "@Wawandco"
+author: "@paganotoni"
 draft: false
 type: post
 
