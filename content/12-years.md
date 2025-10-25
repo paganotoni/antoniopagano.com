@@ -1,7 +1,7 @@
 ---
 Title: Por los Próximos 100 Años
 Date: 2025-10-25
-Summary: Para Dal, en nuestro dia.Aunque las palabras no alcancen a expresar todo lo que siento, aqui va un intento.
+Summary: Para Dal, en nuestro dia. 12 Años despues!
 Tags: [personal, love, anniversary]
 ---
 Amore mio, hace 12 años comenzamos esta nueva etapa de nuestra larga, pero que se siente tan corta, historia juntos. Tal vez sin saber mucho de lo que nos esperaba, con mucha ilusión y apretando los billetes para asegurar un futuro que aun seguimos construyendo. Y hoy, en este sabado un poco movido por la maravillosa vida que hemos sontruido no dejo de pensar en todas las historias que hemos vivido mientras miro a nuestros hijos crecer y disfrutar de nosotros. Puedo decir que nos lo hemos gozado!
