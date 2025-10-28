@@ -4,7 +4,6 @@ date: 2019-12-18
 draft: false
 type: post
 layout: posts
-type: post
 
 author: "@paganotoni"
 tags: [software-development, buffalo, go, testing]
