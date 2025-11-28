@@ -1,9 +1,13 @@
 @tailwind utilities;
 @plugin "@tailwindcss/typography";
-
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@theme {
+@import "tailwindcss";
+@theme static {
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px; /* Ensure this line exists and is correct */
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
     --font-display: "Inter", sans-serif;
 }
 
