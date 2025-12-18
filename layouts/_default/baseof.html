@@ -6,14 +6,11 @@
         {{ partial "favicon" . }}
 
         {{ with resources.Get "css/style.css" }}
-          {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
-          {{ with . | css.TailwindCSS $opts }}
-            {{ if hugo.IsDevelopment }}
-              <link rel="stylesheet" href="{{ .RelPermalink }}">
-            {{ else }}
-              {{ with . | fingerprint }}
-                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-              {{ end }}
+          {{ if hugo.IsDevelopment }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+          {{ else }}
+            {{ with . | minify | fingerprint }}
+              <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
             {{ end }}
           {{ end }}
 
@@ -26,12 +23,11 @@
 
         {{ end }}
     </head>
-    <body class="h-screen">
+    <body>
         {{ partial "header" . }}
-        <div class="max-w-[1200px] mx-auto px-8 py-12">
+        <main class="container">
             {{- block "main" . }}{{- end }}
-
-            {{ partial "footer" . }}
-        </div>
+        </main>
+        {{ partial "footer" . }}
     </body>
 </html>

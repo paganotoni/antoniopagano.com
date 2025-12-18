@@ -1,17 +1,19 @@
-<header class="max-w-[1200px] mx-auto px-8 py-12 flex flex-row justify-between items-center pb-7 border-b-2 border-gray-100" >
-    <a href="/" class="no-underline text-2xl font-medium text-gray-700 flex flex-row gap-2 items-center">
+<header class="container">
+    <a href="/" class="logo-link">
         {{ $logo := resources.Get "images/shot.png" }}
         {{ $logo := $logo.Process "webp resize 100x" }}
-        <img src="{{ $logo.RelPermalink }}" class="rounded-full w-[50px]" alt="logo" width="50" height="50">
+        <img src="{{ $logo.RelPermalink }}" alt="logo" width="50" height="50">
 
-        <span class="text-base md:text-lg"></span>
+        <span></span>
     </a>
-    <ul class="hidden md:flex list-none flex-row gap-8 font-medium flex-grow mx-0 px-8">
-        <li><a href="/" class="text-lg no-underline text-gray-600 hover:underline font-bold">About</a></li>
-        <li><a href="/blog/" class="text-lg no-underline text-gray-600 hover:underline font-bold">Blog</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+        </ul>
+    </nav>
 
-    <a href="mailto:antonio@pagano.id" class="bg-blue-600 hover:bg-blue-800 inline-block p-4 py-1.5 rounded-lg text-white font-bold no-underline text-lg">
+    <a href="mailto:antonio@pagano.id" role="button">
         Contact
     </a>
 </header>
