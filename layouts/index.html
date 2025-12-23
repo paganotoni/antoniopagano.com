@@ -39,12 +39,8 @@
                 <h3>{{.Title}}</h3>
                 <p>
                     {{.Summary}}
+                    <span><a href="{{ .Params.Link }}" target="_blank">Learn more →</a></span>
                 </p>
-                <footer>
-                    <small>
-                        <a href="{{ .Params.Link }}">Learn more →</a>
-                    </small>
-                </footer>
             </article>
         {{ end }}
     </div>

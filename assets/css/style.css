@@ -31,7 +31,7 @@
 .blog-list {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--spacing-2xl) var(--spacing-2xl);
+    padding: var(--spacing-2xl) var(--spacing-md);
 }
 
 .blog-list h1 {
@@ -51,7 +51,7 @@
 .blog-item {
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--muted-border-color);
-    padding-bottom: 2rem;
+    padding: var(--spacing-lg);
 }
 
 .blog-item:last-child {
@@ -114,6 +114,42 @@
     .hero-content {
         text-align: center;
     }
+
+    .container,
+    .blog-list,
+    header,
+    footer {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+
+    .tools-grid article {
+        padding: var(--spacing-md);
+    }
+
+    .tools-grid article footer a[href] {
+        display: inline !important;
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: none !important;
+        border: none !important;
+        text-decoration: underline !important;
+        color: var(--primary) !important;
+        font-size: inherit !important;
+    }
+
+    .tools-grid {
+        gap: var(--spacing-xs);
+    }
+
+    .projects-grid {
+        gap: var(--spacing-md);
+    }
+
+    .hide-mobile {
+        display: none;
+    }
 }
 
 .hero h1 {
@@ -126,8 +162,18 @@
     text-decoration: underline;
 }
 
+.post-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
+
 .post-details mark {
-    margin-right: 10px;
+    margin: 0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {
@@ -190,6 +236,22 @@ header:not(.post-header) {
     border-bottom: 2px solid var(--muted-border-color);
 }
 
+@media (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header:not(.post-header) {
+        padding: var(--spacing-md) var(--spacing-md) 1.75rem;
+    }
+
+    header nav {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 header .logo-link img {
     border-radius: 50%;
     width: 50px;
@@ -218,4 +280,20 @@ footer {
 
 footer nav {
     margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: var(--spacing-md);
+    }
+
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    footer nav ul {
+        justify-content: center;
+    }
 }
