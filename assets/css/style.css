@@ -100,6 +100,8 @@ nav, .nav {
 body {
     background-color: var(--pico-background-color);
     color: var(--pico-color);
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Minimal button styling - text-like appearance */
@@ -182,6 +184,8 @@ th, td {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: var(--spacing-2xl) var(--spacing-md);
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
 }
 
 .blog-list h1 {
@@ -736,6 +740,12 @@ body > header:not(.post-header) nav a:not([href*="social"]):hover {
     body > header:not(.post-header) nav ul {
         gap: 1rem;
     }
+    
+    /* Fix contact button padding on mobile */
+    body > header:not(.post-header) nav a[href*="social"] {
+        padding: 0.5rem 1.25rem;
+        font-size: 0.8125rem;
+    }
 }
 
 header .logo-link {
@@ -1150,6 +1160,8 @@ footer nav {
     margin-left: -50vw;
     margin-right: -50vw;
     border-top: 1px solid var(--pico-border-color);
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
 }
 
 .bridge-content {
@@ -1186,6 +1198,7 @@ footer nav {
     border: 1px solid var(--pico-primary);
     border-radius: var(--pico-border-radius);
     transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 .bridge-cta:hover {
@@ -1200,6 +1213,49 @@ nav .bridge-cta {
     font-size: 0.875rem;
     padding: 0.5rem 1.25rem;
     color: white !important;
+    /* Ensure button maintains its shape */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Mobile-specific fixes for bridge sections */
+@media (max-width: 767px) {
+    /* Ensure main container doesn't cause overflow */
+    main {
+        overflow-x: hidden;
+    }
+    
+    /* Fix bridge sections on landing page */
+    .wawandco-bridge,
+    .post-bridge {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    /* Ensure bridge content is contained */
+    .bridge-content {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+    
+    /* Bridge CTA mobile adjustments */
+    .bridge-cta {
+        max-width: 100%;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+    }
+    
+    /* Ensure nav doesn't clip the contact button */
+    nav .bridge-cta {
+        margin: 0;
+        padding: 0.5rem 1.25rem !important;
+    }
+    
+    /* Fix potential overflow issues in nav */
+    body > header:not(.post-header) nav ul:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
 }
 
 
@@ -1208,19 +1264,29 @@ nav .bridge-cta {
 @media (max-width: 767px) {
     .wawandco-bridge {
         padding: 3rem 1.5rem;
-        margin: 0 -1rem -1rem -1rem;
+        /* Remove negative margins that cause issues */
+        margin: 0;
+        /* Reset position properties on mobile */
+        width: 100%;
+        position: static;
+        left: auto;
+        right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .wawandco-bridge h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
     }
     
     .wawandco-bridge p {
-        font-size: 1.125rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     
     .bridge-cta {
-        padding: 0.875rem 1.5rem;
+        padding: 0.75rem 1.25rem;
         font-size: 0.875rem;
     }
 }
@@ -1528,7 +1594,23 @@ h2 + .current-roles-grid {
         margin-top: 3rem;
     }
     
-
+    .post-bridge h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .post-bridge p {
+        font-size: 0.9375rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .bridge-content {
+        padding: 0 1rem;
+    }
+    
+    .bridge-divider {
+        margin: 3rem 0 0 0;
+    }
     
     .work-companies,
     .social-companies {
