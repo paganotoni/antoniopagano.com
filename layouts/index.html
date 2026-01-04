@@ -90,8 +90,12 @@
                     {{ if .Params.featured }}
                         <mark class="company-badge">COMPANY</mark>
                     {{ end }}
-                    {{ range .Params.tags }}
-                        <mark class="project-tag">{{ . }}</mark>
+                    {{ if .Params.tags }}
+                        <div class="project-tags">
+                            {{ range .Params.tags }}
+                                <mark class="project-tag">{{ . }}</mark>
+                            {{ end }}
+                        </div>
                     {{ end }}
                 </header>
                 

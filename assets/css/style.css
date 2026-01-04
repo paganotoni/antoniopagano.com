@@ -8,11 +8,8 @@
    =================================== */
 :root {
     --max-width: 1200px;
-    --spacing-xs: 0.5rem;
     --spacing-sm: 0.75rem;
     --spacing-md: 1rem;
-    --spacing-lg: 1.25rem;
-    --spacing-xl: 1.5rem;
     --spacing-2xl: 2rem;
     
     /* ===================================
@@ -108,10 +105,7 @@ body {
 /* Minimal button styling - text-like appearance */
 button, 
 input[type="submit"], 
-input[type="button"], 
-.button, 
-[role="button"],
-a[role="button"] {
+input[type="button"] {
     background-color: transparent !important;
     border: 1px solid var(--pico-border-color) !important;
     border-radius: var(--pico-border-radius) !important;
@@ -122,17 +116,13 @@ a[role="button"] {
 
 button:hover,
 input[type="submit"]:hover,
-input[type="button"]:hover,
-.button:hover,
-[role="button"]:hover,
-a[role="button"]:hover {
+input[type="button"]:hover {
     background-color: var(--pico-form-element-background-color) !important;
     border-color: var(--pico-muted-color) !important;
 }
 
 /* Cards with subtle borders */
-article, 
-.card {
+article {
     background-color: var(--pico-card-background-color);
     border: 1px solid var(--pico-border-color);
     border-radius: var(--pico-border-radius) !important;
@@ -186,12 +176,6 @@ th, td {
 /* ===================================
    BASE LAYOUT & CONTAINERS
    =================================== */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 2rem;
-}
 
 .container,
 .blog-list {
@@ -600,11 +584,6 @@ th, td {
     }
 }
 
-/* Cards */
-.card {
-    margin-bottom: 2.5rem;
-}
-
 /* Grids */
 .current-roles-grid {
     display: grid;
@@ -890,6 +869,12 @@ footer nav {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 500;
+}
+
+.project-tags {
+    flex-basis: 100%;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .company-badge {
@@ -1360,26 +1345,7 @@ h2 + .current-roles-grid {
     margin-bottom: 1.5rem;
 }
 
-.bridge-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--pico-primary);
-    color: var(--pico-primary-inverse);
-    text-decoration: none;
-    border: 1px solid var(--pico-primary);
-    border-radius: var(--pico-border-radius);
-    transition: all 0.2s ease;
-}
 
-.bridge-cta:hover {
-    background-color: var(--pico-primary-hover);
-    border-color: var(--pico-primary-hover);
-    transform: translateY(-1px);
-}
 
 /* Work Page Company Cards */
 .work-companies {
@@ -1515,10 +1481,7 @@ h2 + .current-roles-grid {
         margin-top: 3rem;
     }
     
-    .bridge-cta {
-        font-size: 0.875rem;
-        padding: 0.625rem 1.25rem;
-    }
+
     
     .work-companies,
     .social-companies {
