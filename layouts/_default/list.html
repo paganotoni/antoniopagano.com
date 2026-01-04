@@ -1,20 +1,31 @@
 {{ define "main" }}
 <div class="blog-list">
-    <h1>Thoughts</h1>
-    <p class="blog-subtitle">Sharing my journey, insights, and experiences in tech and life.</p>
+    <h1>Code & Context</h1>
+    <p class="blog-subtitle">Where technology meets human behavior in software development</p>
     
     <div class="blog-grid">
         {{ range .Pages }}
-            <article class="blog-card">
+            <article class="spec-sheet blog-card">
                 <header>
-                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <h3>{{ .Title }}</h3>
+                    <div class="blog-meta">
+                        {{ with .Date }}
+                            <span class="role">{{ .Format "January 2, 2006" }}</span>
+                        {{ end }}
+                    </div>
                 </header>
                 <div class="description">
                     <p>{{ .Summary }}</p>
+                    {{ if .Params.tags }}
+                        <div class="project-tags">
+                            {{ range .Params.tags }}
+                                <mark class="project-tag">{{ . }}</mark>
+                            {{ end }}
+                        </div>
+                    {{ end }}
                 </div>
                 <footer>
-                    {{ partial "post-details.html" . }}
-                    <a href="{{ .Permalink }}" class="read-more">Read Article →</a>
+                    <a href="{{ .Permalink }}">Read Article →</a>
                 </footer>
             </article>
         {{ end }}
