@@ -90,7 +90,7 @@
 
 /* Force monospace font for all headers and nav */
 h1, h2, h3, h4, h5, h6,
-nav, nav a, .nav {
+nav, .nav {
     font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, 'Courier New', monospace !important;
     font-weight: 500;
     letter-spacing: -0.02em;
@@ -1153,6 +1153,14 @@ footer nav {
     background-color: var(--pico-primary-hover);
     border-color: var(--pico-primary-hover);
     transform: translateY(-1px);
+}
+
+/* Navigation bridge-cta adjustments */
+nav .bridge-cta {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica", sans-serif !important;
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+    color: white !important;
 }
 
 
