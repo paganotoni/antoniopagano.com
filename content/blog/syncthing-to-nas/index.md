@@ -8,6 +8,7 @@ description: "Sharing my experience setting up Syncthing to sync files between m
 
 summary: This post walks through setting up Syncthing to sync files between multiple computers and a NAS device. It covers installation on Arch Linux, Docker setup for NAS, device configuration via Tailscale, and important exclusion patterns to avoid syncing unnecessary files.
 
+tags: ["tools", "devops", "networking", "deployment"]
 ---
 
 One of the challenges I had since moving to Omarchy was to find a reliable way to sync files between my (at this point) two main computers: a laptop I use when I work from the office and my mini computer at home. Both run Omarchy (BTW) and were connected to the Tailscale network I use to connect all my devices.

@@ -9,7 +9,7 @@ summary: "Learn why treating UI design as a commodity holds your business back. 
 draft: false
 type: post
 author: "@paganotoni"
-tags: ["UI Design", "UX", "Design Strategy", "Business", "ROI", "Collaboration", "frontend", "business"]
+tags: ["business", "management", "frontend", "teams", "web-development"]
 ---
 
 It’s a familiar story in the digital age. A company needs a new landing page for a big marketing push. To save time and money, they find a freelancer to build a page from a cheap template. The request is simple: "We need a page for our new service. Here’s the text, just make it look clean and modern." A week later, the page is live. It looks perfectly fine.

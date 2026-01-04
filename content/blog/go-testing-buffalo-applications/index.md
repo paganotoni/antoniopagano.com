@@ -6,7 +6,7 @@ type: post
 layout: posts
 
 author: "@paganotoni"
-tags: [software-development, buffalo, go, testing]
+tags: ["go", "testing", "tools", "software-development", "web-development", "backend"]
 description: "Comprehensive guide to testing Go Buffalo applications. Learn best practices, testing strategies, and how to write effective tests for your Buffalo web apps using Go's testing tools and Buffalo's testing utilities."
 
 summary: This comprehensive guide covers testing Go Buffalo applications across different layers. It explains testing routes, middlewares, helpers, actions, and models with practical examples. Learn best practices for ensuring code quality and stability in Buffalo apps.

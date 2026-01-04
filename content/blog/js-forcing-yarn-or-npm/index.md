@@ -5,7 +5,7 @@ draft: false
 type: "post"
 author: "@paganotoni"
 
-tags: [software-development, javascript, frontend]
+tags: ["frontend", "software-development", "devops", "tools"]
 description: "Quick tip: Learn how to maintain package manager consistency in your team by enforcing YARN or NPM usage. Simple steps to prevent dependency conflicts and ensure smooth development workflow."
 
 summary: This tip explains how to enforce consistent package manager usage in JavaScript projects. By configuring .npmrc and package.json engines, teams can prevent mixing YARN and NPM. This avoids dependency conflicts and ensures smooth development workflows.

@@ -5,12 +5,7 @@ draft: false
 type: "post"
 author: "@paganotoni"
 
-tags:
-  - software-development
-  - go
-  - html
-  - templates
-  - golang
+tags: ["go", "architecture", "web-development", "backend"]
 
 keywords:
   - golang

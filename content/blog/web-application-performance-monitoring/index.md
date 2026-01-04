@@ -8,7 +8,7 @@ description: In the context of software, observable systems can help your team a
 summary: Application Performance Monitoring (APM) uses telemetry data to enhance system observability. It helps teams troubleshoot issues, manage resources, and improve user experience in production environments. Instrumenting Go applications with APM tools enables proactive monitoring and optimization.
 
 author: "@paganotoni"
-tags: ["software-development","observability","telemetry","go","performance"]
+tags: ["monitoring", "performance", "go", "devops", "backend"]
 ---
 The acronym stands for _Application Performance Monitoring_ (and also _Application Performance Management_, but we will only focus on the first one) and it refers to the monitoring of telemetry data to measure our system’s health, and availability, or even to troubleshoot problems while it is online.
 

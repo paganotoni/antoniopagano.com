@@ -5,7 +5,7 @@ author: "@paganotoni"
 draft: false
 type: post
 
-tags: [go, golang, music]
+tags: ["go", "software-development", "architecture"]
 description: "An exploration of the surprising parallels between the worlds of music sampling and Go programming, from finding libraries to managing concurrency."
 
 summary: "The process of taking an old sound and making it new feels *exactly* like building software. The tools are different—an MPC instead of Zed—but the *thinking* is identical."

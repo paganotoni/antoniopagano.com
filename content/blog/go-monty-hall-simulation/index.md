@@ -9,7 +9,7 @@ description: When our team couldn't agree on the Monty Hall problem, we turned t
 summary: When our team couldn't agree on the Monty Hall problem, we turned to Go programming to settle the debate. This article shows how we built a simulation to prove that switching doors really does double your chances of winning.
 
 author: "@paganotoni"
-tags: ["go", "golang", "probability", "simulation", "monty-hall", "mathematics", "tutorial"]
+tags: ["go", "software-development", "backend", "testing"]
 ---
 
 Have you ever found yourself in a heated debate where everyone *knows* they're right, but nobody can prove it? That's exactly what happened to our team when the Monty Hall problem came up during a casual lunch discussion.

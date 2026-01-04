@@ -5,7 +5,7 @@ author: "@paganotoni"
 draft: false
 type: post
 
-tags: [go, golang, embed, stdlib]
+tags: ["go", "database", "backend", "software-development"]
 description: "Learn how to improve SQL query management in Go using the embed package. Discover how to leverage SQL files with editor syntax highlighting while embedding queries directly into your Go applications"
 
 summary: This post explores using Go's embed package for improved SQL query management in applications. It compares embedding SQL in strings versus using separate SQL files with go:embed. Learn how this enhances editor support and maintains single-binary deployment.

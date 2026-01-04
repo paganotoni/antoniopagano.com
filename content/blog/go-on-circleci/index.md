@@ -5,7 +5,7 @@ author: "@paganotoni"
 draft: false
 type: post
 
-tags: [software-development, go, CI, deployment, devops]
+tags: ["go", "tools", "deployment", "devops", "testing"]
 description: "Quick guide to setting up Continuous Integration for your Go projects with CircleCI. Get a ready-to-use configuration file and essential settings for seamless Go builds and tests on CircleCI."
 
 summary: This post provides a quick guide to setting up Continuous Integration for Go projects on CircleCI. It includes a sample circle.yml configuration for dependencies, testing, and environment setup. Get started with automated builds and tests for your Go applications.

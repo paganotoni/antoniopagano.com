@@ -5,7 +5,7 @@ author: "@paganotoni"
 draft: false
 type: post
 
-tags: [go, golang, timezone, stdlib]
+tags: ["go", "deployment", "backend", "devops"]
 description: "Updated guide for handling timezone data in Go 1.15 and newer versions. Learn about recent changes in Go's time package and how to properly implement timezone support in modern Go applications."
 
 summary: This updated guide explains handling timezone data in Go 1.15 and newer versions using the time/tzdata package. It covers importing the package or using build tags to embed timezone data. Learn to simplify timezone support in Go applications without Dockerfile modifications.

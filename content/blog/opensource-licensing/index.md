@@ -7,7 +7,7 @@ description: Open-source licensing is an important element that could add comple
 
 summary: This post explains popular open-source licenses and their implications for software development teams. It covers permissive and copyleft licenses like MIT, GPL, Apache, and BSD. Learn how license choices affect usage, modification, and distribution of open-source software.
 
-tags: ["software-development", "open-source", "legal", "business"]
+tags: ["open-source", "business", "software-development"]
 
 ---
 

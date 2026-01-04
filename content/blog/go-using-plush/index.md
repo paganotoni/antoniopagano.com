@@ -4,6 +4,7 @@ title: "Using Plush with Go"
 draft: false
 type: post
 author: "@paganotoni"
+tags: ["go", "architecture", "tools", "web-development", "backend"]
 description: "Learn how to enhance your Go templating with Plush, a powerful template engine. Discover how to simplify template creation and management in Go applications using Plush's intuitive syntax and features."
 
 summary: This post demonstrates using Plush templating engine with plain Go applications for server-side HTML rendering. It shows how to integrate Plush with standard Go handlers and embed templates. Learn to enhance Go web apps with Plush's ERB-like syntax for dynamic content.

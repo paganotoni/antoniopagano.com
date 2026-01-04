@@ -7,7 +7,7 @@ description: "This blog post delves into how small tech teams can utilize Agile 
 
 summary: This post explores how small tech teams can use Agile methodologies to boost product development efficiency. It covers practices like Scrum, Kanban, and XP, along with benefits and strategies for implementation. Learn to overcome challenges and leverage tools for better productivity in small teams.
 
-tags: ["Agile Methodology","Small Tech Teams","Product Development","Scrum Framework","Maximizing Efficiency", "agile", "teams", "business"]
+tags: ["management", "teams", "business", "software-development"]
 
 ---
 

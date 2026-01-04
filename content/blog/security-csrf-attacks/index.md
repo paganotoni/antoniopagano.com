@@ -3,7 +3,7 @@ date: 2025-09-02
 title: "Beyond the Firewall: A Guide to Understanding and Defeating CSRF Attacks"
 description: "Learn how Cross-Site Request Forgery (CSRF) works, why it's a critical security threat, and how to implement robust mitigation strategies like anti-CSRF tokens."
 summary: "A deep dive into CSRF attacks, one of the most common web vulnerabilities. This guide explains the anatomy of an attack, covers best practices for mitigation like the Synchronizer Token Pattern and SameSite cookies, and details common anti-patterns to avoid."
-tags: ["Cybersecurity", "Web Development", "CSRF", "Security", "DevOps", "security", "web-development"]
+tags: ["security", "web-development", "web-tech", "backend", "devops"]
 
 draft: false
 type: post

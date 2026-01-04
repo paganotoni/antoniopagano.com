@@ -3,7 +3,7 @@ date: 2025-09-17
 title: "Lost in Translation? A Founder's Guide to Communicating with Your Development Team"
 description: "Bridge the communication gap between business leaders and developers. This guide provides actionable tips to avoid costly misunderstandings and build better products, faster."
 summary: "Miscommunication between executives and engineering teams is a leading cause of project failure. This guide provides a framework for clear communication, covering why you should define problems (not solutions), how to protect the developer 'flow state,' and the importance of feedback loops. Turn your developers into true product partners."
-tags: ["Leadership", "Communication", "Software Development", "Founder Tips", "Team Culture", "Management", "business", "teams"]
+tags: ["management", "teams", "software-development", "business"]
 draft: false
 type: post
 author: "@paganotoni"

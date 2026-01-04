@@ -6,7 +6,7 @@ author: "@paganotoni"
 draft: false
 type: post
 
-tags: [software-development, Go, Docker, go, deployment]
+tags: ["go", "tools", "deployment", "devops", "backend"]
 description: "Learn how to properly configure timezone support in Go applications running on Alpine Docker images. Guide to including localization files for accurate time handling using Go's time package in containerized apps."
 
 summary: This post explains how to configure timezone support in Go applications running on Alpine Docker images. It covers copying the zoneinfo.zip file and setting the ZONEINFO environment variable. Learn to ensure accurate time handling in containerized Go apps.

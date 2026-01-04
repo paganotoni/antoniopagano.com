@@ -5,7 +5,7 @@ draft: false
 type: post
 
 author: "@paganotoni"
-tags: ["software-development", "go"]
+tags: ["go", "architecture", "software-development", "backend", "deployment"]
 description: "Master Go's build tags to optimize your Go applications. Learn how to use build constraints effectively for platform-specific code, testing, and development configurations."
 
 summary: This post explains how to use Go's build tags for conditional compilation in applications. It covers syntax, Boolean logic for tags, and practical examples for plugins and OS-specific code. Learn to optimize Go builds for different environments and features.
