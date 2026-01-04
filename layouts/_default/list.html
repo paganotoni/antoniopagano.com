@@ -1,13 +1,23 @@
 {{ define "main" }}
 <div class="blog-list">
     <h1>Thoughts</h1>
-    <p>Sharing my journey, insights, and experiences in tech and life.</p>
-    {{ range .Pages }}
-        <article class="blog-item">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <p> {{ .Summary }}</p>
-            {{ partial "post-details.html" . }}
-        </article>
-    {{ end }}
+    <p class="blog-subtitle">Sharing my journey, insights, and experiences in tech and life.</p>
+    
+    <div class="blog-grid">
+        {{ range .Pages }}
+            <article class="blog-card">
+                <header>
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                </header>
+                <div class="description">
+                    <p>{{ .Summary }}</p>
+                </div>
+                <footer>
+                    {{ partial "post-details.html" . }}
+                    <a href="{{ .Permalink }}" class="read-more">Read Article →</a>
+                </footer>
+            </article>
+        {{ end }}
+    </div>
 </div>
 {{ end }}

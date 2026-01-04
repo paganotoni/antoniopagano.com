@@ -1,9 +1,12 @@
 {{ define "main" }}
     <section class="hero">
         <div class="hero-content">
-            <h1>👋 Hello, I'm <span class="highlight">Antonio</span></h1>
-            <div>
-                {{ .Content }}
+            <h1>Pragmatic Systems for a Complex World.</h1>
+            <h2>Building scalable teams and infrastructure.</h2>
+            <div class="hero-roles">
+                <span class="role-pill">Co-Founder @ Symbol Security</span>
+                <span class="role-pill">Founder @ Wawandco</span>
+                <span class="status-indicator">📍 Based in Barranquilla, Colombia</span>
             </div>
         </div>
 
@@ -12,36 +15,150 @@
         <img src="{{ $image.RelPermalink }}" alt="profile-picture" class="hero-image">
     </section>
 
-    <h2>What I Do</h2>
-    <div class="card">
-        <section>
-            {{ range where .Site.Pages "Params.Title" "Work" }}
-                {{ .Content }}
-            {{ end }}
-        </section>
-    </div>
+    <section class="philosophy">
+        <div class="terminal-block">
+            <h3 class="terminal-heading">UNPOPULAR OPINION</h3>
+            <p class="terminal-body">In an industry obsessed with the next shiny framework, I bet on stability. I believe in code that is boring to read but exciting to run. I build systems that survive hype cycles. Whether it's crafting security infrastructure at Symbol or training the next generation of engineers at Wawandco, my focus is the same: Radical honesty, technical depth, and zero fluff.</p>
+        </div>
+    </section>
 
-    <div class="projects-grid">
-        {{ range where .Site.Pages "Params.Section" "entrepreneur" }}
-            <article>
-                <h3>{{ .Title }}</h3>
-                <div>
-                    {{ .Content }}
+    <h2>My Current Roles</h2>
+    <div class="current-roles-grid">
+        {{ range where (where .Site.Pages "Params.Section" "entrepreneur") "Params.featured" true }}
+            <article class="spec-sheet featured-project">
+                <header>
+                    <h3>{{ .Title }}</h3>
+                    {{ if .Params.role }}
+                        <span class="role">{{ .Params.role }}</span>
+                    {{ end }}
+                    {{ if .Params.featured }}
+                        <mark class="company-badge">COMPANY</mark>
+                    {{ end }}
+                    {{ range .Params.tags }}
+                        <mark class="project-tag">{{ . }}</mark>
+                    {{ end }}
+                </header>
+                
+                {{ if .Params.metrics }}
+                <dl class="metrics">
+                    {{ range $key, $value := .Params.metrics }}
+                        <div>
+                            <dd>{{ $value }}</dd>
+                            <dt>{{ $key }}</dt>
+                        </div>
+                    {{ end }}
+                </dl>
+                {{ end }}
+                
+                <div class="description">
+                    {{ if .Params.summary }}
+                        <p>{{ .Params.summary }}</p>
+                    {{ end }}
+                    {{ if .Params.tech }}
+                        <ul class="tech-list">
+                            {{ range .Params.tech }}
+                                <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
                 </div>
+                
+                {{ if .Params.website }}
+                    <footer>
+                        {{ $linkText := "Visit Site →" }}
+                        {{ if .Params.opensource }}
+                            {{ $linkText = "Inspect Source →" }}
+                        {{ else if .Params.linkText }}
+                            {{ $linkText = .Params.linkText }}
+                        {{ end }}
+                        <a href="{{ .Params.website }}" target="_blank">{{ $linkText }}</a>
+                    </footer>
+                {{ end }}
+            </article>
+        {{ end }}
+    </div>
+    
+    <h2>The Lab</h2>
+    <div class="projects-grid">
+        {{ range where (where .Site.Pages "Params.Section" "entrepreneur") "Params.featured" "!=" true }}
+            <article class="spec-sheet">
+                <header>
+                    <h3>{{ .Title }}</h3>
+                    {{ if .Params.role }}
+                        <span class="role">{{ .Params.role }}</span>
+                    {{ end }}
+                    {{ if .Params.featured }}
+                        <mark class="company-badge">COMPANY</mark>
+                    {{ end }}
+                    {{ range .Params.tags }}
+                        <mark class="project-tag">{{ . }}</mark>
+                    {{ end }}
+                </header>
+                
+                {{ if .Params.metrics }}
+                <dl class="metrics">
+                    {{ range $key, $value := .Params.metrics }}
+                        <div>
+                            <dd>{{ $value }}</dd>
+                            <dt>{{ $key }}</dt>
+                        </div>
+                    {{ end }}
+                </dl>
+                {{ end }}
+                
+                <div class="description">
+                    {{ if .Params.summary }}
+                        <p>{{ .Params.summary }}</p>
+                    {{ end }}
+                    {{ if .Params.tech }}
+                        <ul class="tech-list">
+                            {{ range .Params.tech }}
+                                <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                </div>
+                
+                {{ if .Params.website }}
+                    <footer>
+                        {{ $linkText := "Visit Site →" }}
+                        {{ if .Params.opensource }}
+                            {{ $linkText = "Inspect Source →" }}
+                        {{ else if .Params.linkText }}
+                            {{ $linkText = .Params.linkText }}
+                        {{ end }}
+                        <a href="{{ .Params.website }}" target="_blank">{{ $linkText }}</a>
+                    </footer>
+                {{ end }}
             </article>
         {{ end }}
     </div>
 
     <h2>Tools & More</h2>
+    <p class="section-subtitle">Open source tools built and battle-tested by teams at Wawandco</p>
     <div class="tools-grid">
         {{ range where .Site.Pages "Params.Section" "tools" }}
-            <article>
-                <h3>{{.Title}}</h3>
-                <p>
-                    {{.Summary}}
-                    <span><a href="{{ .Params.Link }}" target="_blank">Learn more →</a></span>
-                </p>
+            <article class="tool-card">
+                <header>
+                    <h3>{{.Title}}</h3>
+                </header>
+                <div class="description">
+                    <p>{{.Summary}}</p>
+                </div>
+                <footer>
+                    <a href="{{ .Params.Link }}" target="_blank">Inspect Source →</a>
+                </footer>
             </article>
         {{ end }}
     </div>
+
+    <hr class="bridge-divider" />
+    
+    <section class="wawandco-bridge">
+        <div class="bridge-content">
+            <h2>Building Teams & Infrastructure.</h2>
+            <p>Bridging world-class engineering talent from Colombia to the US.</p>
+            <a href="https://wawand.co" target="_blank" class="bridge-cta">Work with Wawandco →</a>
+        </div>
+    </section>
 {{ end }}

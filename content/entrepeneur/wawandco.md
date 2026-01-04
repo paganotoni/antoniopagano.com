@@ -2,7 +2,18 @@
 title: Wawandco
 website: "https://wawand.co"
 draft: false
-weight: 1
+weight: 2
 section: "entrepreneur"
+featured: true
+role: "Founder & CEO"
+summary: "Elite software development consultancy building high-performance teams for global enterprises."
+metrics:
+  "Engineers Trained": "200+"
+  "Production Apps": "50+"
+  "Users Served": "10M+"
+tech:
+  - "Full-Stack Development"
+  - "Team Training Programs"
+  - "API Architecture"
+  - "DevOps Consulting"
 ---
-Since founding Wawandco in 2013, I've been dedicated to building efficient software development teams that deliver value to our customers while maintaining cost effectiveness. Based in Barranquilla, Colombia and serving global clients mainly in the US and Europe, we specialize in web applications, mobile solutions, APIs, and UX/UI design work for growing businesses. Learn more at [our website](https://wawand.co).
